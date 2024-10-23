@@ -2,8 +2,8 @@ include make/color.mk
 BUILD_DIR = build
 PRINT = printf
 
-WARNINGFLAGS = -Wall -Wextra -Werror -Wno-error=unused-variable -Wno-error=unused-parameter -Wno-error=maybe-uninitialized \
--Wno-error=maybe-uninitialized -Wno-error=sign-compare -Wno-error=implicit-fallthrough -Wno-error=missing-field-initializers
+WARNINGFLAGS = -Wall -Wpedantic -Wextra -Werror -Wno-error=unused-variable -Wno-error=unused-parameter -Wno-error=maybe-uninitialized \
+-Wno-error=maybe-uninitialized -Wno-error=sign-compare -Wno-error=implicit-fallthrough -Wno-error=missing-field-initializers -Wno-pedantic
 CFLAGS += $(OPTFLAGS) $(WARNINGFLAGS)
 LINE = __________________________________________________
 SPACE = |                                                  |
